@@ -84,3 +84,9 @@ h2 {
     border-bottom-right-radius: 3px;
 }
 
+
+@media(max-width:501px) {
+    .result-item, .result-box-body {
+        width: 100%;
+    }
+}
