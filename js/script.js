@@ -26,7 +26,7 @@ function create() {
         </div>
     </div>
   `)
-  title.find(".result-icons").prepend(elEditIcon)
+  title.find(".result-icons").prepend(elEditIcon);
 
   $('.result-container').append(`
     <div class="result-box">
@@ -56,8 +56,8 @@ function create() {
     element.parent().parent().parent().parent()
     .parent().parent().attr('data-id', `${$(resultBoxId).index() + 1} `);
 
-    const oldTitleVal = $('.result-title').text();
-    const oldDescriptionVal = $('.result-box-body').text();
+    const oldTitleVal = element.parent().parent().find('.result-title').text();
+    const oldDescriptionVal = element.parent().parent().parent().find('.result-box-body').text();
     $('.form__input1').val(oldTitleVal);
     $('.form__input2').val(oldDescriptionVal);
   })
